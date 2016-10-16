@@ -1,0 +1,31 @@
+{
+  "name": "node-sample-rest",
+  "version": "1.0.0",
+  "description": "This is sample rest api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okanatabag/node-sample-rest.git"
+  },
+  "keywords": [
+    "node",
+    "mysql",
+    "express",
+    "rest",
+    "api"
+  ],
+  "author": "Okan Atabağ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/okanatabag/node-sample-rest/issues"
+  },
+  "homepage": "https://github.com/okanatabag/node-sample-rest#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mysql": "^2.11.1"
+  }
+}
