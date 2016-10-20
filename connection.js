@@ -1,14 +1,15 @@
 var mysql = require('mysql');
-
+var server= require('./server.info.json');
+console.log();
 function Connection() {
   this.pool = null;
   this.init = function() {
     this.pool = mysql.createPool({
       connectionLimit: 10,
-      host: 'localhost',
-      user: 'root',
-      password: '',
-      database: 'todo'
+      host: server.host,
+      user: server.user,
+      password: server.pass,
+      database: server.database
     });
   };
 

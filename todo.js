@@ -26,8 +26,10 @@ function Todo() {
  };
  this.update = function(todo, res) {
     connection.acquire(function(err, con) {
-      con.query('update todo_list set ? where id = ?', [todo, todo.id], function(err, result) {
+       var q = con.query('update todo_list set ? where id = ?', [todo, todo.id], function(err, result) {
         con.release();
+        console.log(err);
+        console.log(q.sql);
         if (err) {
           res.send({status: 1, message: 'TODO update failed'});
         } else {
